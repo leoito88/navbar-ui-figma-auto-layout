@@ -30,7 +30,6 @@ main{
 
 a{
     text-decoration: none;
-    /* padding: 0 1rem 0; */
     color: #000;
 }
 
@@ -48,24 +47,27 @@ h2{
 h3{
     font-size: 0.9rem;
     font-weight: 500;
-    margin: 0.3rem 0.5rem;
+    margin: 0.3rem 0rem;
 }
+
+/* Nav Bar With Search Tab */
 
 .with-search-tab{
     background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 0.6rem;
     width: auto;
     height: 3.3rem;
     margin: 1rem 6rem 8rem 6rem;
+    padding: 0 1rem;
+    gap: 20px;
 }
 
 img{
     width: 2rem;
     height: 2rem;
-    padding: 0.3rem 0.05rem 0.3rem 0.3rem ;
 }
 
 .logo{
@@ -73,10 +75,13 @@ img{
     align-items: center;
     justify-content: space-between;
     color: #0d5fc0;
+    margin: 0 0rem 0 0;
+    width: 103px;
 }
 
 .logo h3{
     font-weight: 800;
+    margin: 0 0 0 0.5rem;
 }
 
 .section-left{
@@ -84,13 +89,14 @@ img{
     align-items: center;
     justify-content: space-between;
     flex-basis: 20%;
+    gap: 1rem;
 }
 
-.section-middle{
+.with-search-tab .section-middle{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 40%;
+    flex-basis: 35%;
 }
 
 .search{
@@ -106,6 +112,7 @@ input{
     padding: 0.3rem 1rem 0.3rem 2.5rem;
     outline: none;
     position: relative;
+    margin: 0 17px 0 0;
 }
 
 ::placeholder{
@@ -123,13 +130,16 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 35%;
+    flex-basis: 45%;
+    gap: 1rem;
 }
 
 .btn-not-fill{
     border: 2px solid #0d5fc0;
     border-radius: 0.3rem;
-    padding: 0 0.3rem;
+    display: flex;
+    white-space: nowrap;
+    padding: 0 0.5rem;
 }
 
 .btn-not-fill h3{
@@ -140,7 +150,7 @@ i{
     border: 2px solid #0d5fc0;
     background-color: #0d5fc0;
     border-radius: 0.3rem;
-    padding: 0 0.3rem;
+    padding: 0 0.5rem;
 }
 
 .btn-fill h3{
@@ -148,13 +158,37 @@ i{
     font-weight: 400;
 }
 
+/* Nav Bar Without Search Tab */
+
 .without-search-tab{
     background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 0.6rem;
     width: auto;
     height: 3.3rem;
     margin: 1rem 6rem 12rem 6rem;
+    padding: 0 1rem;
+}
+
+.without-search-tab .section-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-basis: 50%; */
+}
+
+.without-search-tab .section-middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-basis: 0%; */
+}
+
+.section-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 35%;
 }
