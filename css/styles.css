@@ -57,6 +57,22 @@ h3{
     margin: 1rem 4rem;
 }
 
+img{
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.3rem ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #0d5fc0;
+}
+
+.logo h3{
+    font-weight: 700;
+}
+
 .section-left{
     display: flex;
 }
