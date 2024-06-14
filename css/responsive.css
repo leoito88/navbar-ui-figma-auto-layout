@@ -1,0 +1,133 @@
+@media (min-width: 1921px) {
+
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1600px){
+    .with-search-tab .section-left{
+        display: none;
+    }
+
+    .with-search-tab .section-middle{
+        margin-left: 2rem;
+    }
+
+    input{
+        margin: 0;
+    }
+}
+
+@media (max-width: 1440px){
+
+}
+
+@media (max-width: 1280px){
+
+    .with-search-tab .section-right{
+        display: none;
+    }
+
+    .menu-1{
+        display: block;
+    }
+
+    .with-search-tab .section-middle{
+        margin-left: 0rem;
+    }
+
+    .without-search-tab .section-left{
+    display: none;
+    }
+}
+
+@media (max-width: 1023px){
+
+    .without-search-tab .section-right{
+        display: none;
+        }
+
+    .menu-2{
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+
+    main{
+        width: 100vw;
+    }
+
+    h2{
+        text-align: left;
+        justify-content: left;
+        margin: 1rem 2rem;
+    }
+
+    .with-search-tab, .without-search-tab{
+        margin: 1rem 2rem 8rem 2rem;
+    }
+
+    input{
+        display: none;
+    }
+
+
+    .with-search-tab .section-middle{
+        justify-content: end;
+    }
+
+    .fa-magnifying-glass{
+        color: #0d5fc0 ;
+        position: relative;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        border: 2px solid #9aa9bb;
+        cursor: pointer;
+        margin-right: 2.5rem;
+    }
+}
+
+@media (max-width: 480px){
+
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 1.3rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .with-search-tab, .without-search-tab{
+        margin: 1rem 0.5rem 8rem 0.5rem;
+    }
+
+    .fa-magnifying-glass{
+        margin-right: 1.5rem;
+    }
+}
+
+@media (max-width: 320px){
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .with-search-tab, .without-search-tab{
+        margin: 1rem 0rem 8rem 0rem;
+        padding: 0 0.5rem;
+    }
+
+    .fa-magnifying-glass{
+    display: none;
+    }
+}

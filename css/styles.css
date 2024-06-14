@@ -63,7 +63,6 @@ h3{
     height: 3.3rem;
     margin: 1rem 6rem 8rem 6rem;
     padding: 0 1rem;
-    gap: 20px;
 }
 
 img{
@@ -75,7 +74,7 @@ img{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     color: #0d5fc0;
     margin: 0 0rem 0 0;
     width: 103px;
@@ -102,15 +101,19 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 20%;
+    flex-basis: 10%;
     gap: 1rem;
+    margin-left: 3rem;
+    flex-grow: 1;
 }
 
-.with-search-tab .section-middle{
+.section-middle{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 40%;
+    flex-basis: 50%;
+    flex-grow: 2;
+    margin: 0 1rem;
 }
 
 .search{
@@ -135,7 +138,7 @@ input{
     font-size: 0.9rem;
 }
 
-i{
+.fa-magnifying-glass{
     color: #d3d3d3;
     position: relative;
     left: 1.9rem;
@@ -147,6 +150,7 @@ i{
     justify-content: space-between;
     flex-basis: 40%;
     gap: 1rem;
+    flex-grow: 1;
 }
 
 .btn-not-fill{
@@ -168,7 +172,7 @@ i{
     background-color: #0d5fc0;
     border-radius: 0.3rem;
     padding: 0.05rem 0.6rem 0rem 0.5rem;
-    transition: all .5s;
+    transition: all .2s;
 }
 
 .btn-fill h3{
@@ -208,6 +212,17 @@ i{
     color: #0d5fc0;
 }
 
+.menu{
+    display: none;
+}
+
+.fa-bars{
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: solid 2px #0d5fc0;
+}
+
 /* Nav Bar Without Search Tab */
 
 .without-search-tab{
@@ -226,17 +241,26 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-basis: 10%;
+    gap: 1rem;
+    margin-left: 3rem;
+    flex-grow: 1;
 }
 
 .without-search-tab .section-middle{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-basis: 50%;
+    flex-grow: 2;
+    margin: 0 1rem;
 }
 
 .section-right{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 35%;
+    flex-basis: 40%;
+    gap: 1rem;
+    flex-grow: 1;
 }
